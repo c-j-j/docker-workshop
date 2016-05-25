@@ -3,9 +3,7 @@ services:
   db:
     image: redis
   web:
-    build: .
-    volumes:
-    - ./lib:/var/app/lib
+    image: cj/docker_demo:1
     ports:
       - "4567:4567"
     depends_on:
